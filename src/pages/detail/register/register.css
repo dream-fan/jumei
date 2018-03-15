@@ -1,0 +1,62 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+#register header :nth-child(1){
+	color: #999999;
+}
+#register header{
+	width: 100%;
+	box-sizing: border-box;
+	height: 7vh;
+	font-size: 0.5rem;
+	display: flex;
+	padding: 0px 40px;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: solid 1px #EEEEEE;
+}
+#register header a img{
+	width: 25px;
+	height: 25px;
+}
+#register form span{
+	color: red;
+}
+#register form{
+	width: 80%;
+	margin: 0 auto;
+	color: #B9B9B9;
+}
+#register fieldset{
+	text-align: center;
+	border: none;
+	border-top: solid 1px #F5F5F5;
+	color: #B9B9B9;
+	margin: 0px 10%;
+	height: 8vh;
+	line-height: 8vh;
+}
+#register input{
+	box-sizing: border-box;
+	width: 93%;
+	height: 35px;
+	border: none;
+	background-color: #F5F5F5;
+	border-radius: 45px;
+	padding-left: 20px;
+}
+#register dl{
+	height: 9vh;
+	margin: 0;
+}
+#register dl dd{
+	margin-top: 5px;
+}
+#register input[type="submit"]{
+	color: white;
+	background-color: #FEB2C5;
+}
+#register form p{
+	padding: 25px 0px 0px 40px;
+}

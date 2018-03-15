@@ -1,0 +1,35 @@
+<div id="login">
+	<header>
+		<a href="#/index/mine"><</a>
+		<p>登录</p>
+		<a href="#/register">注册</a>
+	</header>
+	<!--使用angular校验，每一个校验的项都必须用ng-model，登录不然无法执行在脏检查，就无法校验-->
+	<form name="angularForm" novalidate method="post" ng-controller="ctr1">
+		<fieldset>
+			<legend>首页手机登录</legend>
+		</fieldset>
+		<dl>
+			<dt>
+				<input type="number" placeholder="请输入11位手机号" required="required" name="phone" ng-model="user.phone" ng-pattern="/^1[3|4|5|7|8]\d{9}$/">
+	            <span ng-show="angularForm.phone.$error.required">*</span>
+			</dt>
+			<dd class="warning" ng-show="angularForm.phone.$error.number">
+				只能输入数字
+			</dd>
+			<dd class="warning" ng-show="angularForm.phone.$error.pattern">
+				手机格式不正确
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<input type="password" placeholder="6-16位登录密码" required="required" ng-minlength="6" name="pwd" ng-model="user.password" id="pwd"/>
+	                <span class="warning" ng-show="!angularForm.pwd.$pristine && angularForm.pwd.$error.required">*</span>
+				</dt>
+			<dd class="warning" ng-show="angularForm.pwd.$error.minlength">
+				最少为6位数
+			</dd>
+		</dl>
+		<input type="submit" value="登录" ng-click="login()" />
+	</form>
+</div>

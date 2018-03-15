@@ -1,0 +1,19 @@
+<div id="b">
+	<div ng-repeat="i in b1" class="div">
+		<div class="tu" ng-if="i.isp">
+			<a href="#"><img src="{{i.image}}"/></a>
+			<div class="p">
+				<div class="p-a">
+					<p>{{i.detail}}</p>
+				</div>
+				<div class="p-b">
+					<p><span class="span">{{i.price | currency:"￥"}}</span><span class="color">{{i.cost | currency:"￥"}}</span></p>
+					<p class="color">{{i.many}}万条评论</p>
+				</div>
+			</div>		
+		</div>
+		<div class="img" ng-if="!i.isp">
+			<a href="#"><img ng-src="{{i.image}}"/></a>
+		</div>
+	</div>
+</div>

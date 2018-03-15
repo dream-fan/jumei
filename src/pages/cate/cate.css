@@ -1,0 +1,30 @@
+#cate{
+	width: 100%;
+	height: 100%;
+	background-color: #F5F5F5;
+}
+#cate .cate-cate .active{
+	color: #FE4070;
+	border-bottom: solid 2px #FE4070;
+	padding: 10px 10px 10px 20px;
+}
+#cate .cate-cate{
+	width: 100%;
+	height: 6vh;
+	background-color: white;
+	border-bottom: solid 1px #F2F2F2;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+#cate .cate-cate ul{
+	width: 900px;
+	height: 100%;
+	padding: 0px 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+#cate .cate-cate ul li{
+	padding: 0px 10px 0px 20px;
+}

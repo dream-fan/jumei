@@ -1,0 +1,20 @@
+<div id="shoua1">
+	<header>
+		<a href="#/index/home/shou/a"><</a>
+		<p>{{shoua1.detail}}</p>
+		<a href="#/index/home/shou/a"><img ng-src="src/image/shou.png"/></a>
+	</header>
+	<section id="shoua1-top">
+		<img ng-src="{{shoua1.image1}}"/>
+		<section class="shoua1-a">
+			<p>{{shoua1.price | currency:"￥"}}</p>
+			
+		</section>
+	</section>
+	<footer>
+		<a href="#" class="a1"><img ng-src="src/image/dian.png"/><span>店铺</span></a>
+		<a href="#/index/cart" class="a2"><img ng-src="src/image/go.png"/><span>购物车</span></a>
+		<button class="a3" ng-click="buy(shoua1.id)">加入购物车</button>
+		<a href="#" class="a4">立即购买</a>
+	</footer>
+</div>

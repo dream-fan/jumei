@@ -1,0 +1,17 @@
+<div id="cate-a">
+	<a href="#"><img ng-src="src/image/1.jpeg" id="cate-a-img"/></a>
+	<div ng-repeat="i in catea"class="cate-zong" ui-sref = "cate1({id:i.id})">
+		<div class="cate-top">
+			<img ng-src="{{i.image}}"/>
+			<button id="btn">{{i.many}}条评论</button>
+		</div>
+		<p class="p"><span>[2人团]</span>{{i.detail}}</p>
+		<div class="cate-bottom">
+			<div class="cate-bottom-a">
+				<p><span class="span">{{i.price | currency:"￥"}}</span><span>{{i.cost | currency:"￥"}}</span></p>
+				<p>单买价{{i.danmai | currency:"￥"}}</p>
+			</div>
+			<button>去开团</button>
+		</div>
+	</div>
+</div>

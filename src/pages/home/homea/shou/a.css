@@ -1,0 +1,41 @@
+
+#a{
+	background-color: #F5F5F5;
+}
+#a img{
+	width: 100%;
+	height: 20vh;
+	margin-bottom: 3px;
+}
+#a .tu{
+	position: relative;
+}
+#a .p{
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0% 5% 0% 40% ;
+	padding: 10px 0;
+}
+#a .p span{
+	text-decoration: line-through;
+}
+#a .p{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#a .p .span{
+	padding-right: 10px;
+	font-size: 0.4rem;
+	font-weight: 700;
+	text-decoration: none;
+	color: #FE4070;
+}
+#a .p-a p{
+	font-size: 0.02rem;
+}
+#a .color{
+	color: #999999;
+}

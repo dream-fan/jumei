@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+footer{
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	height: 50px;
+	border-top: solid 1px #EEEEEE;
+	background-color: white;
+}
+
+footer ul{
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+footer ul li{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+img{
+	width: 30px;
+	height: 30px;
+}
+.active{
+	color: #FE4070;
+}
+
+.slideInLeft.ng-enter {
+	transition: 1s linear all;
+	transform: translateX(-320px);
+	opacity: 0;
+}
+
+.slideInLeft.ng-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+}

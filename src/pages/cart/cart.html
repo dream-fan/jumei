@@ -1,0 +1,31 @@
+<div id="cart">
+		<header>
+			<a href="index.html#/index/home/shou/a"><</a>
+			<p>购物车</p>
+			<a href="index.html#/index/home/shou/a"><img ng-src="src/image/shou.png"/></a>
+		</header>
+	<!--<div class="cart-zong">
+		<section class="section">
+			<p><img src="src/image/c.png"/></p>
+			<p class="p">您的购物车没有商品，请先去挑选心爱的商品吧！</p>
+			<a href="index.html#/index/home/shou/a">去逛逛</a>
+		</section>
+	</div>-->
+	<div class="cart-ling">
+		<div class="qing">
+			<p class="p"><input type="checkbox"  all-check ng-model="allCheck"/>聚美优品发货</p>
+			<button ng-click="qing()">清空</button>
+		</div>
+		<div class="row" ng-repeat="i in cartData">
+			<div class="col-1"><input type="checkbox" one-check ng-model="i.Bol"></div>
+				<div class="col-1"><img ng-src="{{i.image}}"/></div>
+				<div class="col-2">{{i.name}}</div>
+				<div class="col-1">{{i.oneprice | currency:"￥"}}</div>
+				<div><button add-btn dataId = "{{i.id}}">+</button>{{i.num}}<button add-min dataId = "{{i.id}}">-</button></div>
+		</div>
+		<div class="footer" >
+			<p><input type="checkbox"  all-check ng-model="allCheck"/>全选<span>合计<b>{{totalPrice()}}</b></span></p>
+			<a href="#">去结算</a>
+		</div>
+	</div>
+</div>
